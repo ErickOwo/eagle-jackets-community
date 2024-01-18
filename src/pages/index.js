@@ -46,9 +46,10 @@ export default function Home() {
     };
 
     const dayDate = dateObject.getDate();
-    const day = valueDay(dateObject.getDay());
+    let day = valueDay(dateObject.getDay());
     const month = valueMonth(dateObject.getMonth());
     const year = dateObject.getFullYear();
+    day++;
     return `${day}, ${month} ${dayDate}, ${year}`;
   };
 
