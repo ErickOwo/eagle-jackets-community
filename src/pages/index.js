@@ -8,8 +8,11 @@ export default function Home() {
   useEffect(()=>{
     const getData = async ()=>{
       const res = await axios.get('/api/source')
-      console.log(res.data.source)
-      setSources(res.data.source)
+      const data = res.data.source;
+
+      data.reverse()
+
+      setSources(data)
     }
     getData()
   }, [])
@@ -50,8 +53,8 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full min-h-screen flex items-start justify-center pt-4 bg-[url('../../public/wallpaper.jpg')] bg-no-repeat bg-cover bg-center">
-      <div className="flex flex-col bg-slate-200 m-2 p-2 min-w-[200px]">
+    <div className="w-full min-h-screen flex items-start justify-center pt-4 bg-[url('../../public/wallpaper.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+      <div className="flex flex-col m-2 lg:w-[600px] gap-2">
         {
           sources?.map((item, id)=><Item
             title={item.title}

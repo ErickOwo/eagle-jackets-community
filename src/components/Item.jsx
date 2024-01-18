@@ -2,7 +2,7 @@ import React from 'react'
 
 const Item = ({title, student, links, description, date}) => {
   return (
-    <div className="flex flex-col mx-2 md:mx-aute">
+    <div className="flex flex-col p-2 bg-slate-200 md:mx-aute">
           <div className="flex flex-wrap gap-2">
            <b>Title:</b>
            <p>
@@ -25,10 +25,13 @@ const Item = ({title, student, links, description, date}) => {
             <b>Links:</b>
             <div className="flex flex-col gap-1">
               {
-                links?.map(link=><a 
-                  href={link} 
-                  target="_blank"
-                  className="break-all text-blue-600 underline" >{link}</a>)
+                links?.map((link, index)=><div className="flex flex-nowrap gap-1">
+                  <b>{index+1}:</b>
+                  <a 
+                    href={link} 
+                    target="_blank"
+                    className="break-all text-blue-600 underline" >{link}</a>
+                </div>)
               }
             </div>
           </div>
