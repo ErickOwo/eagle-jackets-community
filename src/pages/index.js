@@ -49,7 +49,7 @@ export default function Home() {
     let day = valueDay(dateObject.getDay());
     const month = valueMonth(dateObject.getMonth());
     const year = dateObject.getFullYear();
-    day++;
+    dayDate++;
     return `${day}, ${month} ${dayDate}, ${year}`;
   };
 
