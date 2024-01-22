@@ -45,11 +45,10 @@ export default function Home() {
       if (m == 11) return 'December';
     };
 
-    const dayDate = dateObject.getDate();
-    let day = valueDay(dateObject.getDay());
+    let dayDate = dateObject.getDate();
+    const day = valueDay(dateObject.getDay());
     const month = valueMonth(dateObject.getMonth());
     const year = dateObject.getFullYear();
-    dayDate++;
     return `${day}, ${month} ${dayDate}, ${year}`;
   };
 
