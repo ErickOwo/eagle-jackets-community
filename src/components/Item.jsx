@@ -2,7 +2,7 @@ import React from 'react'
 
 const Item = ({title, student, links, description, date}) => {
   return (
-    <div className="flex flex-col p-2 bg-slate-200 md:mx-aute">
+    <div className="flex flex-col p-2 bg-amber-950 text-yellow-100 rounded-md border-2 border-black md:mx-aute">
           <div className="flex flex-wrap gap-2">
            <b>Title:</b>
            <p>

@@ -53,7 +53,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full min-h-screen flex items-start justify-center pt-4 bg-[url('../../public/wallpaper.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+    <div className="w-full min-h-screen flex items-start justify-center pt-4 bg-[url('../../public/bg-2.png')] bg-no-repeat bg-cover bg-center bg-fixed">
       <div className="flex flex-col m-2 lg:w-[600px] gap-2">
         {
           sources?.map((item, id)=><Item
