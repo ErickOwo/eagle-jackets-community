@@ -2,23 +2,23 @@ import React from 'react'
 
 const Item = ({title, student, links, description, date}) => {
   return (
-    <div className="flex flex-col p-2 bg-amber-950 text-yellow-100 rounded-md border-2 border-black md:mx-aute">
+    <div className="flex flex-col p-2 bg-[#fffaf7] text-black rounded-md border-2 border-black md:mx-aute">
           <div className="flex flex-wrap gap-2">
            <b>Title:</b>
            <p>
-            {title}
+            {title}.
            </p>
           </div>
           <div className="flex flex-wrap gap-2">
            <b>Trainee:</b>
            <p>
-            {student}
+            {student}.
            </p>
           </div>
           <div className="flex flex-wrap gap-2">
            <b>Description:</b>
            <p>
-            {description}
+            {description}.
            </p>
           </div>
           <div className="flex flex-col ">
@@ -30,7 +30,7 @@ const Item = ({title, student, links, description, date}) => {
                   <a 
                     href={link} 
                     target="_blank"
-                    className="break-all text-blue-600 underline" >{link}</a>
+                    className="break-all text-blue-600 " >click here to watch the material</a>
                 </div>)
               }
             </div>
