@@ -30,7 +30,7 @@ const Item = ({title, student, links, description, date}) => {
                   <a 
                     href={link} 
                     target="_blank"
-                    className="break-all text-blue-600 " >click here to watch the material</a>
+                    className="break-all text-blue-600 " >click here to see the material</a>
                 </div>)
               }
             </div>
