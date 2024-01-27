@@ -3,11 +3,10 @@ import React from 'react'
 const Item = ({title, student, links, description, date}) => {
   return (
     <div className="flex flex-col p-2 bg-[#fffaf7] text-black rounded-md border-2 border-black md:mx-aute">
-          <div className="flex flex-wrap gap-2">
-           <b>Title:</b>
-           <p>
+          <div className="text-2xl font-semiboldbold break-all mb-2">
+           <h3>
             {title}.
-           </p>
+           </h3>
           </div>
           <div className="flex flex-wrap gap-2">
            <b>Trainee:</b>
@@ -35,7 +34,7 @@ const Item = ({title, student, links, description, date}) => {
               }
             </div>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mt-2">
            <b>Date:</b>
            <p>
             {date}
