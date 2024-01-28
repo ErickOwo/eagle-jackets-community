@@ -116,6 +116,7 @@ export default function Home() {
               let newDate1 = new Date(dateFilt);
               let newDate2 = new Date(item.date)
 
+              newDate2.setDate(newDate2.getDate() - 1)
               newDate1 = `${newDate1}`
               newDate2 = `${newDate2}`
 
