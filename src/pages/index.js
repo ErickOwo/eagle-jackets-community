@@ -81,7 +81,7 @@ export default function Home() {
           <Select
             onChange={handleSelection}
             options={[
-              {value: "Everyone", label: "Every one"},
+              {value: "Everyone", label: "Everyone"},
               {value: "Joel", label: "Joel"},
               {value: "Brandon", label: "Brandon"},
               {value: "Diego", label: "Diego"},
