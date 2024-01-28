@@ -62,7 +62,7 @@ export default function Home() {
 
   const handleSelection = e  => {
     const student = `${e.value}`
-    if(student == "Anyone") setStudentFilt(null)
+    if(student == "Everyone") setStudentFilt(null)
     else setStudentFilt(student)
   }
 
@@ -81,7 +81,7 @@ export default function Home() {
           <Select
             onChange={handleSelection}
             options={[
-              {value: "Anyone", label: "Any one"},
+              {value: "Everyone", label: "Every one"},
               {value: "Joel", label: "Joel"},
               {value: "Brandon", label: "Brandon"},
               {value: "Diego", label: "Diego"},
