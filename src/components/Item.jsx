@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Item = ({title, student, links, description, date}) => {
+const Item = ({title, student, links, description, date, key}) => {
   return (
-    <div className="flex flex-col p-2 bg-[#fffaf7] text-black rounded-md border-2 border-black md:mx-aute">
+    <div className="flex flex-col p-2 bg-[#fffaf7] text-black rounded-md border-2 border-black" key={key} >
           <div className="text-2xl font-semiboldbold break-all mb-2">
            <h3>
             {title}.
@@ -24,7 +24,7 @@ const Item = ({title, student, links, description, date}) => {
             <b>Links:</b>
             <div className="flex flex-col gap-1">
               {
-                links?.map((link, index)=><div className="flex flex-nowrap gap-1">
+                links?.map((link, index)=><div className="flex flex-nowrap gap-1" id={index} >
                   <b>{index+1}:</b>
                   <a 
                     href={link} 
