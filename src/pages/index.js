@@ -62,12 +62,12 @@ export default function Home() {
 
   const handleSelection = e  => {
     const student = `${e.value}`
-    if(student == "Cualquiera") setStudentFilt(null)
+    if(student == "Anyone") setStudentFilt(null)
     else setStudentFilt(student)
   }
 
   return (
-    <div className="w-full min-h-screen flex pt-4 bg-[url('../../public/bg-2.png')] bg-no-repeat bg-cover bg-center bg-fixed flex-col items-center p-2 gap-2">
+    <div className="w-full min-h-[800px] lg:min-h-screen flex pt-4 bg-[url('../../public/bg-2.png')] bg-no-repeat bg-cover bg-center bg-fixed  flex-col items-center p-2 gap-2">
       <div className='lg:w-[600px] w-full bg-[#fffaf7] p-2 border-2 border-black'>
         <h2 className='text-xl font-semibold'>Filter.</h2>
         <div className='flex flex-col'>
@@ -81,7 +81,7 @@ export default function Home() {
           <Select
             onChange={handleSelection}
             options={[
-              {value: "Cualquiera", label: "Cualquiera"},
+              {value: "Anyone", label: "Any one"},
               {value: "Joel", label: "Joel"},
               {value: "Brandon", label: "Brandon"},
               {value: "Diego", label: "Diego"},
