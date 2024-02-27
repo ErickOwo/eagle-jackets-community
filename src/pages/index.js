@@ -91,6 +91,9 @@ export default function Home() {
               {value: "Isabel", label: "Isabel"},
               {value: "Reggie", label: "Reggie"},
               {value: "Pedro", label: "Pedro"},
+              {value: "Elder", label: "Elder"},
+              {value: "Joselinne", label: "Joselinne"},
+              {value: "Erick", label: "Erick"},
             ]}
              />
         </div>
